@@ -36,7 +36,7 @@ if (hour !=0) and (userInput !=0):
 	indiaTotCost=0
 	newyorkTotCost=0
 	chinaTotCost=0
-	#reverse mchine units(top to botton methology use)
+	#reverse mchine units(use top to botton methology )
 	reverseMachineUnit={}
 	for k,v in machineunits.items():
 	    dict_element={k:v}
@@ -70,12 +70,12 @@ if (hour !=0) and (userInput !=0):
 			if x == g:
 				chinaTotCost +=y*h
 
-	#which machine how much time round
+	#machine list
 	machinelist = list(ilist.items()) 
 	#print(machinelist,'machinelist')
 
 
-	#data append and insert for desired output structure
+	#data append and insert in desired output structure
 	fnlOutput['Output'][0]['region']=region[0]
 	fnlOutput['Output'][0]['total_cost']= newyorkTotCost
 	fnlOutput['Output'][0]['machines']= machinelist  
